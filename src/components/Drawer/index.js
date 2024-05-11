@@ -30,7 +30,7 @@ export default function Drawer({ onClose, onRemove, items = [],opened }) {
     setIsLoading(false);
  };
   return (
-    <div className={`${styles.overlay} ${opened ? styles. overlayVisible : ''}`}>
+    <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
       <div className={styles.drawer}>
         <h2 className="d-flex justify-between mb-30">
           Кошик
