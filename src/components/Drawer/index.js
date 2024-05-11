@@ -32,7 +32,7 @@ export default function Drawer({ onClose, onRemove, items = [],opened }) {
   return (
     <div className={`${styles.overlay} ${opened ? styles. overlayVisible : ''}`}>
       <div className={styles.drawer}>
-        <h2 className="mb-30 justify-between mb-30">
+        <h2 className="d-flex justify-between mb-30">
           Кошик
           <img onClick={onClose} className="cu-p" src="img/close.svg" alt="close" />
         </h2>
@@ -65,14 +65,6 @@ export default function Drawer({ onClose, onRemove, items = [],opened }) {
               <span>Підсумок:</span>
               <div></div>
               <b>{totalprice}грн</b>
-            </li>
-            <li>
-              <span>
-                Налог 5%
-              </span>
-              <div>
-              </div>
-              <b>{totalprice / 100 * 5}</b>
             </li>
           </ul>
           <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
